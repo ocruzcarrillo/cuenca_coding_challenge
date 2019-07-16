@@ -1,11 +1,13 @@
+
 # Cuenca - coding challenge
 ### ISC Omar CC
 
-Here's the programming problem: [https://en.wikipedia.org/wiki/Eight_queens_puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
-
-
 # N Queens Puzzle
 
+## The Problem
+Here's the programming problem: [https://en.wikipedia.org/wiki/Eight_queens_puzzle](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
+
+## Steps Challenge
 These are the different aspect of the project you can work on (in order):
 
 1. Determine all possible solutions for a given N where N ≥ 8 (within 10 mins on a laptop). Bonus points for a higher N where N is the size of the board / number of queens
@@ -19,8 +21,17 @@ These are the different aspect of the project you can work on (in order):
 5. Setup Travis CI (or similar) for your public GitHub repo to run the tests automatically
 
   
-
+## Consideration
 You don't need to go through all of the steps, but there should be instructions on how I can run the code. I mainly want to see how you approach a problem and your coding style. There are multiple steps so you have the option to show me different skills. It's up to you.
+
+## Runing the Solution
+### Build Docker
+
+    docker build -t n_queens_puzzle .
+
+### Run Docker
+
+    docker run -it --rm --name runing_n_queens_puzzle n_queens_puzzle 
 
 ## References
 ### Program reference
