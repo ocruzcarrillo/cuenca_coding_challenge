@@ -9,7 +9,8 @@ COPY . /app
 USER root
 RUN whoami \
 	&& apt-get update \
-	&& apt-get install -y postgresql postgresql-contrib 
+	&& apt-get install -y postgresql postgresql-contrib \
+	&& pip install --no-cache-dir -r requirements.txt 
 RUN update-rc.d postgresql enable 
 
 USER postgres
